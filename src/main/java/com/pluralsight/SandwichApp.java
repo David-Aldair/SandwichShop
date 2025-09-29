@@ -5,13 +5,14 @@ import java.util.Scanner;
 public class SandwichApp {
     public static void main(String[] args) {
 
+        // I is my variable name for the scanner
         Scanner I = new Scanner(System.in);
 
         System.out.println("""
                             Welcome to our wonderful Sandwich Shop!
                             Pick a Sandwich
-                            (1) Regular: $5.45
-                            (2) Large: $8.95
+                            Type (1) for Regular: $5.45
+                            Type (2) for Large: $8.95
                             """);
 
         int size = I.nextInt();
@@ -25,7 +26,7 @@ public class SandwichApp {
             price = 8.95;
         }
 
-        System.out.println("What is your age: ");
+        System.out.println("What is your age ?: ");
 
         int age = I.nextInt();
 
@@ -40,7 +41,7 @@ public class SandwichApp {
 
         }
 
-        System.out.println("The final price will be: $" + price);
+        System.out.printf("Total Price: $%.2f",price);
 
 
 
